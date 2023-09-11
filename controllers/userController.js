@@ -110,7 +110,7 @@ const sendOtp = async (req, res) => {
             <div class="card">
               <h3>Verify Your Account</h3>
               <br>
-              <a href="${process.env.DOMAIN}/api/users/verify-otp?code=${code}&uid=${req.user.userId}">
+              <a href="${process.env.DOMAIN}/api/user/verify-otp?code=${code}&uid=${req.user.userId}">
                 <button>Verify</button>
               </a>
             </div>
